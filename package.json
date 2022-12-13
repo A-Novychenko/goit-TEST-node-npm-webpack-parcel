@@ -2,12 +2,10 @@
   "name": "goit-test-node-npm-webpack-parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server.js",
-    "app": "node app.js",
-    "build": "babel src -d dist"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -21,13 +19,11 @@
   },
   "homepage": "https://github.com/A-Novychenko/goit-TEST-node-npm-webpack-parcel#readme",
   "dependencies": {
-    "express": "^4.18.2",
+    "@parcel/babel-preset-env": "^2.8.1",
     "joi": "^17.7.0",
     "shortid": "^2.2.16"
   },
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2"
+    "parcel": "^2.8.1"
   }
 }
